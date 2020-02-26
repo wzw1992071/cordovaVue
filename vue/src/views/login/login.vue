@@ -4,7 +4,7 @@
  */
  <template>
   <div id="login_wrap" class="flex column">
-   <!-- <div class="title">登录推广号</div>
+   <div class="title">登录推广号</div>
     <div class="flex center mb_24">
       <input v-model="phone" class="input" type="text" placeholder="输入手机号">
     </div>
@@ -13,8 +13,8 @@
       <div class="button bg_red fs_14 col_6 ml_11" @click="getCode">{{getCodeStr}}</div>
     </div>
     <div class="button bg_red fs_16 mt_50" :class="{disabled: !disabled}" @click="login">登录</div>
-    <img v-if="showBottomImg" class="bottom_img" src="../../assets/img/login_bottom_img.png" alt=""> -->
-	这是只是个登录
+    <img v-if="showBottomImg" class="bottom_img" src="../../assets/img/login_bottom_img.png" alt="">
+	
   </div>
  </template>
  
