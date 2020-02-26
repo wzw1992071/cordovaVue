@@ -1,0 +1,107 @@
+body{ margin: 0;padding: 0;font-family: "微软雅黑";overflow: hidden;-webkit-overflow-scrolling: touch;-webkit-text-size-adjust: 100% !important;text-size-adjust: 100% !important;-moz-text-size-adjust: 100% !important; max-width:99999px;}
+body,html{-webkit-text-size-adjust: none;width: 100%;height: 100%;color: #333}
+*{text-decoration: none;list-style: none;}
+img{border: 0px;}
+ul,li,dl,dd,dt,p,ol,h1,h2,h3,h4,h5{font-size: 12px;font-weight: 100;padding: 0;margin: 0;}
+.wrap{margin: 0 auto;}
+.fl{float: left;}
+.fr{float: right;}
+.index{overflow: hidden;}
+.clr{clear:both; height:0px; width:100%; font-size:1px; line-height:0px; visibility:hidden; overflow:hidden;}
+.pointer{cursor:pointer;}
+a,input,button{ outline:none; }
+// input{line-height: 0.4rem}
+::-moz-focus-inner{border:0px;}
+.anchorBL {
+    display: none;
+}
+
+a{color: #000;}
+.wrapper{clear: both;width: 100%;}
+.flex{
+    display: flex;
+    &.space_between{
+        justify-content: space-between;
+    }
+    &.space_around {justify-content: space-around}
+	&.align_center{
+	    align-items: center;
+    }
+    &.center {
+        align-items: center;
+        justify-content: center;
+    }
+    &.column {
+        flex-direction: column
+    }
+}
+.flex_grow {flex-grow: 1}
+// 向下三角形
+.triangle_down {
+    width: 0;
+    height: 0;
+    border-left: 0.1rem solid transparent;
+    border-right: 0.1rem solid transparent;
+    border-top: 0.1rem solid white;
+}
+
+.triangle_down_333 {
+    width: 0;
+    height: 0;
+    border-left: 0.1rem solid transparent;
+    border-right: 0.1rem solid transparent;
+    border-top: 0.1rem solid #333;
+}
+// 字体大小
+.fs_10 {font-size: 0.1rem}
+.fs_12 {font-size: 0.12rem}
+.fs_14 {font-size: 0.14rem}
+.fs_16 {font-size: 0.16rem}
+.fs-17 {font-size: 0.17rem}
+.fs_24 {font-size: 0.24rem}
+.fs_28 {font-size: 0.28rem}
+// 字体颜色
+.main_color {color:$main_color}
+.default_color {color: $important_text_color}
+.minor_text_color {color: $minor_text_color}
+// 字体加粗
+.bold {font-weight: bold;}
+// 排列方向
+.text-align-right {text-align: right;}
+.text-align-left {text-align: left;}
+// 背景颜色
+.bg_red {background: $main_color;}
+// 按钮样式
+.button {
+    line-height: 0.48rem;
+    color: #ffffff;
+    border-radius: 0.06rem;
+    text-align: center;
+}
+
+// 宽度
+.col_20 {width: 100%}
+.col_19 {width: 95%}
+.col_18 {width: 90%}
+.col_17 {width: 85%}
+.col_16 {width: 80%}
+.col_15 {width: 75%}
+.col_14 {width: 70%}
+.col_13 {width: 65%}
+.col_12 {width: 60%}
+.col_11 {width: 55%}
+.col_10 {width: 50%}
+.col_9 {width: 45%}
+.col_8 {width: 40%}
+.col_7 {width: 35%}
+.col_6 {width: 30%}
+.col_5 {width: 25%}
+.col_4 {width: 20%}
+.col_3 {width: 15%}
+.col_2 {width: 10%}
+.col_1 {width: 10%}
+
+// 三方
+.loadToast{
+    background-color: transparent !important;
+}
