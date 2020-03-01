@@ -16,7 +16,7 @@ export default {
   data(){
 	return {
 		src1:"",
-		base64:"这是Base64",
+		base64:"这是Base64111",
 	}  
   },
   components: {
