@@ -51,9 +51,11 @@ fastclick.attach(document.body);
 
 
 
+document.addEventListener("deviceready", ()=>{
+	new Vue({
+	  router,
+	  store,
+	  render: h => h(App)
+	}).$mount('#app')
+}, false);
 
-new Vue({
-  router,
-  store,
-  render: h => h(App)
-}).$mount('#app')

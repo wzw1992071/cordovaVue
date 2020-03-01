@@ -13,6 +13,8 @@
       <div class="button bg_red fs_14 col_6 ml_11" @click="getCode">{{getCodeStr}}</div>
     </div>
     <div class="button bg_red fs_16 mt_50" :class="{disabled: !disabled}" @click="login">登录</div>
+	<div class="button bg_red fs_16 mt_50"  @click="gotest">登录1</div>
+
     <img v-if="showBottomImg" class="bottom_img" src="../../assets/img/login_bottom_img.png" alt="">
 	
   </div>
@@ -97,7 +99,10 @@
           })
           this.$router.replace('/')
        })
-     }
+     },
+	 gotest(){
+		this.$router.replace('/test') 
+	 }
    },
    created(){
       // this.$utils.indexGetToken()

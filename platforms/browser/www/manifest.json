@@ -1,10 +1,10 @@
 {
   "background_color": "#FFF",
   "display": "standalone",
-  "name": "HelloCordova",
-  "short_name": "HelloCordova",
+  "name": "铁航专线推广平台",
+  "short_name": "铁航专线推广平台",
   "version": "io.cordova.hellocordova",
-  "description": "A sample Apache Cordova application that responds to the deviceready event.",
+  "description": "测试新玩意可用不",
   "author": "Apache Cordova Team",
   "icons": [],
   "start_url": "index.html"

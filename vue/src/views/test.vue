@@ -1,34 +1,59 @@
 <template>
   <div class="home">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-    <van-steps :active="1">
-      <van-step>买家下单</van-step>
-      <van-step>商家接单</van-step>
-      <van-step>买家提货</van-step>
-      <van-step>交易完成</van-step>
-    </van-steps>
+	<button id = "cameraTakePicture" @click="getPicture">打开相机</button>
+	<div>
+		<img  id = "myImage" :src="src1"></img>
+	</div>
+	
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+
 
 export default {
   name: 'home',
+  data(){
+	return {
+		src1:"",
+		base64:"这是Base64",
+	}  
+  },
   components: {
-    HelloWorld
+    
   },
   methods: {
-    
-    getDate(){
-      this.$http.test().then(res=>{
-        console.log(res)
-      })
-    }
+	onDeviceReady(){
+	  console.log(navigator.camera);
+	},
+    getPicture(){
+		var that = this;
+		navigator.camera.getPicture((imageData)=>{
+			// 成功后回调
+	
+			that.src1 = "data:image/png;base64," + imageData;
+			
+		}, ()=>{
+			// 失败后回调
+			console.log(3333333)
+			alert('Failed because: ' + message);
+		}, { 
+		  quality: 50,
+		  destinationType: Camera.DestinationType.DATA_URL
+	   });
+	}
   },
   created(){
-    this.getDate()
+    
+  },
+  mounted() {
+  	document.addEventListener("deviceready", this.onDeviceReady, false);
   }
 }
 </script>
+
+<style lang="scss" scoped>
+	#myImage{
+		width: 1rem;
+	}
+</style>
